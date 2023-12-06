@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "apocalypse:item/stabilizer"
+        "layer0": "apocalypse_origins:item/stabilizer"
     }
 }

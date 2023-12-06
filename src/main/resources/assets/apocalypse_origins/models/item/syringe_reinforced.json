@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/generated",
     "textures": {
-        "layer0": "apocalypse:item/syringe_reinforced"
+        "layer0": "apocalypse_origins:item/syringe_reinforced"
     }
 }
