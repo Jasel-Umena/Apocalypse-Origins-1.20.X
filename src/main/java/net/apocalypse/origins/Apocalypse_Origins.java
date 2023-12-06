@@ -11,6 +11,6 @@ public class Apocalypse_Origins implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Teleporting, Phasing, Evolving, Injecting. Apocalypse Origins has been initialized.");
+		LOGGER.info("Teleporting, Phasing, Evolving, Injecting. Apocalypse Origins is ready.");
 	}
 }
