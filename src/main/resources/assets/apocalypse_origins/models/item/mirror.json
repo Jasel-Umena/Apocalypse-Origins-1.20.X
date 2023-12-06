@@ -8,7 +8,7 @@
             "predicate": {
                 "custom_model_data": 1
             },
-            "model": "item/mirrorb"
+            "model": "apocalypse_origins:item/modeldata/mirrorb"
         }
     ]
 }
