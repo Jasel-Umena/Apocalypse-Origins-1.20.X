@@ -5,13 +5,19 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import static net.apocalypse.origins.item.ModToolMaterial.*;
+
 public class ModItems {
+    public static final Item SYRINGE = registerItem("syringe", new SwordItem(ModToolMaterial.SYRINGE,0, 0f, new FabricItemSettings()));
+    public static final Item SYRINGE_REINFORCED = registerItem("syringe_reinforced", new SwordItem(ModToolMaterial.SYRINGE_REINFORCED, 0, 0f, new FabricItemSettings()));
     public static final Item SYRINGE_LIVING = registerItem("syringe_living", new Item(new FabricItemSettings()));
     public static final Item SYRINGE_AQUATIC = registerItem("syringe_aquatic", new Item(new FabricItemSettings()));
     public static final Item SYRINGE_ARTHROPOD = registerItem("syringe_arthropod", new Item(new FabricItemSettings()));
@@ -29,30 +35,10 @@ public class ModItems {
     public static final Item GENERASER = registerItem("generaser", new Item(new FabricItemSettings()));
     public static final Item MIRROR = registerItem("mirror", new Item(new FabricItemSettings()));
     public static final Item REGULATOR = registerItem("regulator", new Item(new FabricItemSettings()));
-    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(SYRINGE_LIVING);
-        entries.add(SYRINGE_AQUATIC);
-        entries.add(SYRINGE_ARTHROPOD);
-        entries.add(SYRINGE_CREEPER);
-        entries.add(SYRINGE_END);
-        entries.add(SYRINGE_NETHER);
-        entries.add(SYRINGE_UNDEAD);
-        entries.add(SYRINGE_ACTIVE);
-        entries.add(STABILIZER);
-        entries.add(ANALYZER);
-        entries.add(MUTAGENS);
-        entries.add(RNABACKUP);
-        entries.add(ANTIMUTAGENS);
-        entries.add(GENELOCK);
-        entries.add(GENERASER);
-        entries.add(MIRROR);
-        entries.add(REGULATOR);
-    }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Apocalypse_Origins.MOD_ID, name), item);
     }
     public static void registerModItems() {
         Apocalypse_Origins.LOGGER.info("Registering items for "+Apocalypse_Origins.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

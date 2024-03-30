@@ -1,4 +1,5 @@
 {
+    "itemgroup.apocalypse_origins": "Apocalypse Origins",
     "item.apocalypse_origins.syringe": "Syringe",
     "item.apocalypse_origins.syringe_aquatic": "Syringe (Aquatic Mob Gene)",
     "item.apocalypse_origins.syringe_arthropod": "Syringe (Arthropod Mob Gene)",
@@ -18,5 +19,7 @@
     "item.apocalypse_origins.generaser": "Gene Eraser",
     "item.apocalypse_origins.mirrorblade": "Mirror Blade",
     "item.apocalypse_origins.mirror": "Refractor Mirror",
-    "item.apocalypse_origins.regulator": "Spatial Regulator"
+    "item.apocalypse_origins.regulator": "Spatial Regulator",
+
+    "block.apocalypse_origins.x_block": "X Block"
 }
