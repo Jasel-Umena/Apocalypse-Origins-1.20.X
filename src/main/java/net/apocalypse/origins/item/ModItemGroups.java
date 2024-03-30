@@ -38,6 +38,11 @@ public class ModItemGroups {
                         entries.add(REGULATOR);
 
                         entries.add(ModBlocks.X_BLOCK);
+                        entries.add(ModBlocks.Y_BLOCK);
+                        entries.add(ModBlocks.Z_BLOCK);
+                        entries.add(ModBlocks.HEXALTAR);
+                        entries.add(ModBlocks.HEXALTAR2);
+                        entries.add(ModBlocks.HEXALTAR3);
                     }).build());
     public static void registerItemGroups() {}
 }

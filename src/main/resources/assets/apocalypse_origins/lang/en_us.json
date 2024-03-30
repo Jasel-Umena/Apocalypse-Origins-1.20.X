@@ -21,5 +21,10 @@
     "item.apocalypse_origins.mirror": "Refractor Mirror",
     "item.apocalypse_origins.regulator": "Spatial Regulator",
 
-    "block.apocalypse_origins.x_block": "X Block"
+    "block.apocalypse_origins.x_block": "X Block",
+    "block.apocalypse_origins.y_block": "Y Block",
+    "block.apocalypse_origins.z_block": "Z Block",
+    "block.apocalypse_origins.hexaltar": "Hexblade Altar (Tier 1)",
+    "block.apocalypse_origins.hexaltar2": "Hexblade Altar (Tier 2)",
+    "block.apocalypse_origins.hexaltar3": "Hexblade Altar (Tier 3)"
 }

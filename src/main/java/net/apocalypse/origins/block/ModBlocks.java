@@ -13,8 +13,17 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block X_BLOCK = registerBlock("x_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD)));
-
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+    public static final Block Y_BLOCK = registerBlock("y_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+    public static final Block Z_BLOCK = registerBlock("z_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+    public static final Block HEXALTAR = registerBlock("hexaltar",
+            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
+    public static final Block HEXALTAR2 = registerBlock("hexaltar2",
+            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
+    public static final Block HEXALTAR3 = registerBlock("hexaltar3",
+            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Apocalypse_Origins.MOD_ID, name), block);
@@ -22,5 +31,8 @@ public class ModBlocks {
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(Apocalypse_Origins.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
+    }
+    public static void registerModBlocks() {
+        Apocalypse_Origins.LOGGER.info("Registering blocks for "+Apocalypse_Origins.MOD_ID);
     }
 }
