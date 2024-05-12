@@ -35,14 +35,35 @@ public class ModItemGroups {
                         entries.add(GENELOCK);
                         entries.add(GENERASER);
                         entries.add(MIRROR);
+                        entries.add(MIRROR_NETHER);
                         entries.add(REGULATOR);
+                        entries.add(RETURN_SHARD);
+                        entries.add(CRYSTALLINE_EMBLEM);
+                        entries.add(LUCKY_GEMSTONE);
+                        entries.add(SANDS_FOCUS);
+                        entries.add(SIGHT_FOCUS);
+                        entries.add(SUNDERING_FOCUS);
+                        entries.add(SEETHING_FOCUS);
+                        entries.add(SCRYING_FOCUS);
+                        entries.add(SAGACITY_FOCUS);
+                        entries.add(SEAS_FOCUS);
+                        entries.add(SKIES_FOCUS);
+                        entries.add(SMITING_FOCUS);
+                        entries.add(UNNAMED_FOCUS);
+                        entries.add(DDD_FOCUS);
+                        entries.add(FFF_FOCUS);
+                        entries.add(SSS_FOCUS);
 
                         entries.add(ModBlocks.X_BLOCK);
                         entries.add(ModBlocks.Y_BLOCK);
                         entries.add(ModBlocks.Z_BLOCK);
+                        entries.add(ModBlocks.UNBUDDING_AMETHYST);
                         entries.add(ModBlocks.HEXALTAR);
                         entries.add(ModBlocks.HEXALTAR2);
                         entries.add(ModBlocks.HEXALTAR3);
+                        entries.add(ModBlocks.WORLD);
+                        entries.add(ModBlocks.WORLD_HELL);
+                        entries.add(ModBlocks.WORLD_END);
                     }).build());
     public static void registerItemGroups() {}
 }

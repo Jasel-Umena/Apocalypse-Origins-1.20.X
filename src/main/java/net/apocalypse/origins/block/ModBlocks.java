@@ -18,12 +18,20 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
     public static final Block Z_BLOCK = registerBlock("z_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+    public static final Block UNBUDDING_AMETHYST = registerBlock("gob_complainer",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
     public static final Block HEXALTAR = registerBlock("hexaltar",
-            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)));
     public static final Block HEXALTAR2 = registerBlock("hexaltar2",
-            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)));
     public static final Block HEXALTAR3 = registerBlock("hexaltar3",
-            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)));
+    public static final Block WORLD = registerBlock("world",
+            new Block(FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)));
+    public static final Block WORLD_HELL = registerBlock("world_hell",
+            new Block(FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)));
+    public static final Block WORLD_END = registerBlock("world_end",
+            new Block(FabricBlockSettings.copyOf(Blocks.SOUL_LANTERN)));
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Apocalypse_Origins.MOD_ID, name), block);

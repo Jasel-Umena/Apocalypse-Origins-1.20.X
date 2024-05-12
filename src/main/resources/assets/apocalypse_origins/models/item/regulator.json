@@ -8,13 +8,19 @@
             "predicate": {
                 "custom_model_data": 1
             },
-            "model": "apocalypse_origins:item/modeldata/regulator_negative"
+            "model": "apocalypse_origins:item/modeldata/regulator_x"
         },
         {
             "predicate": {
                 "custom_model_data": 2
             },
-            "model": "apocalypse_origins:item/modeldata/regulator_positive"
+            "model": "apocalypse_origins:item/modeldata/regulator_y"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "apocalypse_origins:item/modeldata/regulator_z"
         }
     ]
 }

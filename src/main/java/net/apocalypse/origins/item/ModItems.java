@@ -34,7 +34,24 @@ public class ModItems {
     public static final Item GENELOCK = registerItem("genelock", new Item(new FabricItemSettings()));
     public static final Item GENERASER = registerItem("generaser", new Item(new FabricItemSettings()));
     public static final Item MIRROR = registerItem("mirror", new Item(new FabricItemSettings()));
+    public static final Item MIRROR_NETHER = registerItem("mirror_nether", new Item(new FabricItemSettings()));
     public static final Item REGULATOR = registerItem("regulator", new Item(new FabricItemSettings()));
+    public static final Item RETURN_SHARD = registerItem("return_shard", new Item(new FabricItemSettings()));
+    public static final Item CRYSTALLINE_EMBLEM = registerItem("crystalline_emblem", new Item(new FabricItemSettings()));
+    public static final Item LUCKY_GEMSTONE = registerItem("lucky_gemstone", new Item(new FabricItemSettings()));
+    public static final Item SANDS_FOCUS = registerItem("sands_focus", new Item(new FabricItemSettings()));
+    public static final Item SIGHT_FOCUS = registerItem("sight_focus", new Item(new FabricItemSettings()));
+    public static final Item SUNDERING_FOCUS = registerItem("sundering_focus", new Item(new FabricItemSettings()));
+    public static final Item SEETHING_FOCUS = registerItem("seething_focus", new Item(new FabricItemSettings()));
+    public static final Item SCRYING_FOCUS = registerItem("scrying_focus", new Item(new FabricItemSettings()));
+    public static final Item SAGACITY_FOCUS = registerItem("sagacity_focus", new Item(new FabricItemSettings()));
+    public static final Item SEAS_FOCUS = registerItem("seas_focus", new Item(new FabricItemSettings()));
+    public static final Item SKIES_FOCUS = registerItem("skies_focus", new Item(new FabricItemSettings()));
+    public static final Item SMITING_FOCUS = registerItem("smiting_focus", new Item(new FabricItemSettings()));
+    public static final Item UNNAMED_FOCUS = registerItem("unnamed_focus", new Item(new FabricItemSettings()));
+    public static final Item DDD_FOCUS = registerItem("ddd_focus", new Item(new FabricItemSettings()));
+    public static final Item FFF_FOCUS = registerItem("fff_focus", new Item(new FabricItemSettings()));
+    public static final Item SSS_FOCUS = registerItem("sss_focus", new Item(new FabricItemSettings()));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Apocalypse_Origins.MOD_ID, name), item);
     }
